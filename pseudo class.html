@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+        /* :hover,:link,:visited,:active,:target,:focus,
+        :required,:optional,:read-only,:read-write,:valid,:invalid,
+        :disabled,:default,:checked,:in-range,:out-of-range,:enabled,
+        :optional,:empty,:not,:first-child,:last-child
+        :nth-child()->it is used in list,tables
+        :nth-last-child(),
+        :only-child,:only-of-type,:nth-of-type(),:nth-last-of-type(),:nth-of-type()*/
+        p:hover{
+            background: rgb(187, 227, 55);
+            color: aliceblue;
+        }
+        a:link{
+            background: rgb(234, 229, 235);
+            color: rgb(234, 6, 6);
+        }
+        
+    
+        input:valid{
+            color: blue;
+            background: red;
+        }
+        input:invalid{
+            color: rgb(11, 194, 185);
+            background: rgb(235, 15, 231);
+        }
+        input:disabled{
+            background:violet ;
+            color: blue;
+        }
+        input:default +label{
+            background:slateblue ;
+            color: brown;
+        }
+        input:in-range{
+            background: #e80eae;
+            color: #e1edf1;
+        }
+        input:out-of-range{
+            background:violet ;
+            color: blue;
+        }
+        p:empty{
+            color: rgb(242, 242, 244);
+            background-color: black;
+
+        }
+        textarea:empty{
+            color: rgb(242, 242, 244);
+            background-color: black;
+
+        }
+        p:not(#one){
+            color: rgb(242, 242, 244);
+            background-color: black;
+
+        }
+       h2:first-child{
+            color: #e80eae;
+            background:rgb(75, 225, 15) ;
+        }
+        h2:nth-child(3){
+            color: #e80eae;
+            background:rgb(75, 225, 15) ;
+        }
+        h2:nth-last-child(3n+4){
+            color: #e80eae;
+            background:rgb(75, 225, 15) ;
+        }
+       li:first-of-type{
+            color: hwb(326 12% 13%);
+            background: #e1edf1;
+        }
+        /*li:only-child{
+            color: azure;
+            background: green;
+        }*/
+        li:only-of-type{
+            color: rgb(188, 53, 23);
+            background: green;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2>ujnas</h2>
+    <p>hi viewers this is hover</p>
+    <!---<a href="https://www.flipkart.com/">flipkart</a>---><br><br>
+    <a href="#last">last</a>
+    <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Illo aliquam velit nobis quidem est eum laboriosam, 
+        voluptate in vero aut?
+         Id doloribus porro eius eum nesciunt quae eaque error est?
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+         Illo aliquam velit nobis quidem est eum laboriosam, 
+         voluptate in vero aut?
+         Lorem ipsum dolor sit amet consectetur,
+             adipisicing elit. Deleniti, totam nobis minus sunt fuga architecto cum laudantium accusantium soluta incidunt amet iure officia! Sint laudantium iusto,
+             sunt asperiores quae libero.</p>
+          <p id="last">Id doloribus porro eius eum nesciunt quae eaque error est?
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+          Illo aliquam velit nobis quidem est eum laboriosam, 
+          voluptate in vero aut?
+           Id doloribus porro eius eum nesciunt quae eaque error est?</p>
+           <a href="#first">first</a>
+           <br><br><br><br>
+           <form>
+           name: <input type="text" placeholder="sanju" minlength="5" > <br><br>
+        phno:<input type="number" placeholder="8919275697" readonly><br><br>
+        <input type="text" disabled placeholder="gfg">
+                <input type="submit" disabled><br><br>
+                <input type="checkbox" checked ><label>telugu</label><br><br>
+                <input type="checkbox" checked ><label>english</label>  <br><br>
+                <input type="checkbox" ><label>malayalam</label>  <br><br>
+                
+                      
+
+        
+
+
+     </form>
+     <input type="number" min="568" max="765"  > 
+     <p id="one">fdfdf</p>
+     <p id="two">fdsfd</p>
+     <p id="three">dffdsfdf</p>
+     <textarea></textarea>
+     <div>
+        <h2>sanju</h2>
+        <h2>santhosh</h2>
+        <h2>hsothnas</h2>
+         <h2>ujnas</h2>
+         <h2>sanju</h2>
+        <h2>santhosh</h2>
+        <h2>hsothnas</h2>
+         <h2>ujnas</h2>
+         <h2>sanju</h2>
+        <h2>santhosh</h2>
+        <h2>hsothnas</h2>
+         <h2>ujnas</h2>
+         <h2>sanju</h2>
+        <h2>santhosh</h2>
+        <h2>hsothnas</h2>
+         <h2>ujnas</h2>
+         <h2>sanju</h2>
+        <h2>santhosh</h2>
+        <h2>hsothnas</h2>
+         <h2>ujnas</h2>
+     </div>
+     <ol>
+        <li>aalu</li>
+        <li>eelu</li>
+        <li>tholu</li>
+        <li>chaalu</li>
+        <li>maalu</li>
+        <li>feel</li>
+     </ol>
+     <ul>
+        <li>sa</li>
+        <li>ri</li>
+        <li>ga</li>
+        <li>ma</li>
+        <li>pa</li>
+        <li>da</li>
+        <li>ni</li>
+        <li>sha</li>
+     </ul>
+     <div><ol><li>gffgffh</li></ol></div>
+     <div>
+        
+            <li>bbffhj</li>
+            <p>fdsgfusf</p>
+            <h4>giugy</h4>
+            
+        
+    </div>
+</body>
+</html>

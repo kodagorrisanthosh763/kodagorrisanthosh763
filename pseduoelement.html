@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo element</title>
+    <style>
+        h2::first-letter{
+            text-transform: uppercase;
+            color: blue;
+        }
+        p::first-line{
+            color: brown;
+            font-size: large;
+        }
+        h2::before{
+            content: "hi welcome to css turtorial";
+            color: blueviolet;
+        }
+        h2::after{
+            content: "after element";
+        }
+        h2::selection{
+            background: red;
+            color: #21e40f;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>i love css1</h2>
+        <h2>i love css2</h2>
+        <h2>i love css3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Esse magni, odio atque dignissimos placeat, debitis, 
+             quos quam molestiae eos nesciunt voluptas facere exercitatione
+            </p>
+
+    </div>
+</body>
+</html>

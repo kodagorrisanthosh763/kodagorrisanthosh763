@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id,class,selectors</title>
+    <style>
+        /*...class.....*/
+        .style{
+            color:aquamarine;
+            background-color: rgb(200, 187, 212);
+            width: 120px;
+            height: 16px;
+            position:static;
+        }
+        /*.........id.....*/
+        #one{
+            color:rgb(250, 7, 27);
+            background-color: rgb(189, 213, 218);
+            width: 120px;
+            height: 16px;
+            position:;
+        }
+        #two{
+            color:rgb(227, 13, 13);
+            background-color: rgb(41, 65, 76);
+        }
+        #three{
+            color: chartreuse;
+            background-color: bisque;
+
+        }
+                                   /**child selector(>)
+                                   descendent selector(space)
+                                   Adjacent sibling selector(+)
+                                   General sibling selector(~)*/
+           p~h2{
+
+            color: aqua;
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Harum a saepe minima expedita molestias quia minus ab, 
+     voluptatum sunt iure dolores eveniet facilis, natus similique. 
+    Fugit eaque ullam ducimus repudiandae.</p> 
+    <form>
+
+        <input type="text"class="style"  placeholder="first name"><br><br>
+        <input type="text" id="one"  placeholder="middle name"><br><br>
+        <input type="text" class="style" placeholder="last name"><br><br>
+        <input type="text" id="two" placeholder="email"><br><br>
+        <input type=" number" class="style" placeholder="ph.no"><br><br>
+        <button id="three">submit</button>
+    </form>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h2><p>I LOVE class</p></h2>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h2><p>i love css</p></h2>
+    </div>
+
+
+</body>
+</html>

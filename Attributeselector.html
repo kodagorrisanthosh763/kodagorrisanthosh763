@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        /*..Attribute selectors
+        *->Attribute anyawhere
+        $->Ending Attribute
+        ^->Starting Attribute
+        |->Starting with value or (-)
+        ~->Same Attribute at starting
+        */
+        p[title^="para"]{
+            background: blueviolet;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <p title="para" >i love css1</p>
+    <p title="para">i love css1</p>
+    <p>i love css1</p>
+     <p>i love css1</p>
+</body>
+</html>
